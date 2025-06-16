@@ -1,0 +1,14 @@
+# 민감한 디렉토리 접근 차단
+<FilesMatch "^.*(\.env|config\.php|database\.php|session\.php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# PHP 실행 차단 (storage 폴더 보호)
+<Directory "/var/www/html/wyhds/storage">
+    Deny from all
+</Directory>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
