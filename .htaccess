@@ -5,7 +5,7 @@
 </FilesMatch>
 
 # PHP 실행 차단 (storage 폴더 보호)
-<Directory "/var/www/html/wyhds/storage">
+<Directory "/var/www/html/certeasy/storage">
     Deny from all
 </Directory>
 

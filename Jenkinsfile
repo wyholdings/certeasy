@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'git@github.com:wyholdings/wyhds.git'
+                git 'git@github.com:wyholdings/certeasy.git'
             }
         }
 
