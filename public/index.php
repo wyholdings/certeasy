@@ -1,5 +1,5 @@
 <?php
-echo "test5";exit;
+echo "test6";exit;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 // index.php
