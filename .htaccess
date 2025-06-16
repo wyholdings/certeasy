@@ -4,11 +4,6 @@
     Deny from all
 </FilesMatch>
 
-# PHP 실행 차단 (storage 폴더 보호)
-<Directory "/var/www/html/certeasy/storage">
-    Deny from all
-</Directory>
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
