@@ -1,4 +1,5 @@
 <?php
+echo "test";
 // index.php
 session_start();
 
